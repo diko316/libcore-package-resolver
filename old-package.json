@@ -1,14 +1,10 @@
 {
   "name": "libcore-package-resolver",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Light-weight multi purpose package dependency resolver",
   "main": "dist/libcore-package-resolver.js",
   "module": "dist/libcore-package-resolver.es.js",
   "jsnext:main": "dist/libcore-package-resolver.es.js",
-  "directories": {
-    "doc": "docs",
-    "test": "test"
-  },
   "scripts": {
     "test": "bin/build-bundle.sh test || exit 1",
     "start": "bin/build-bundle.sh start || exit 1",
@@ -21,12 +17,9 @@
   },
   "keywords": [
     "libcore",
-    "Fake",
-    "NP-hard",
-    "Package",
-    "resolve",
-    "package",
-    "dependency"
+    "Fake NP-hard",
+    "Package Resolve",
+    "Package Dependency"
   ],
   "author": "Diko Tech Slave",
   "license": "MIT",
@@ -52,6 +45,9 @@
     "rollup-plugin-uglify": "^2.0.1"
   },
   "optionalDependencies": {
+    "libcore": "^0.3.7"
+  },
+  "dependencies": {
     "libcore": "^0.3.7"
   }
 }
