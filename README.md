@@ -17,7 +17,7 @@ projects. At least the build will support AMD, CommonJS, and ES6 environments.
 This library is packaged by npm, so it can be installed by running code below.
 
 ```shell
-npm install libdom --save
+npm install libcore-package-resolver --save
 ```
 
 ### Webpack and other CommonJS setup

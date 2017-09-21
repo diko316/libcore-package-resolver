@@ -1,6 +1,6 @@
 {
   "name": "libcore-package-resolver",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Light-weight multi purpose package dependency resolver",
   "main": "dist/libcore-package-resolver.js",
   "module": "dist/libcore-package-resolver.es.js",
@@ -21,12 +21,9 @@
   },
   "keywords": [
     "libcore",
-    "Fake",
-    "NP-hard",
-    "Package",
-    "resolve",
-    "package",
-    "dependency"
+    "Fake NP-hard",
+    "Package resolve",
+    "Package dependency"
   ],
   "author": "Diko Tech Slave",
   "license": "MIT",
