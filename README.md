@@ -51,7 +51,7 @@ import { Packager as BasePackager } from "libcore-package-resolver";
 
 ## Module API
 
-Please refer to [API Documentation](https://diko316.github.io/libcore-package-resolver) for more information on Browser DOM helpers.
+Please refer to [API Documentation](https://diko316.github.io/libcore-package-resolver) for more information on Package resolver.
 
 
 ## License
