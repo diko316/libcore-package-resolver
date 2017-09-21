@@ -1,0 +1,34 @@
+version: '2'
+
+services:
+
+  server:
+    build: .
+    image: libcore-package-resolver
+    container_name: "libcore-package-resolver-test"
+    hostname: libcore-package-resolver
+    command: bin/run-devserver.sh
+
+    volumes:
+     - .:/opt/app-source:ro
+
+    ports:
+      - "3000:3000"
+      
+  builder:
+    image: libcore-package-resolver
+    container_name: "libcore-package-resolver-builder"
+    command: bin/autosync-builds.sh
+    
+    environment:
+     - BUILD_MODE=development
+     - SOURCE_MOD_PATH=/opt/app-source-modification
+  
+    volumes:
+      - ./docs:/opt/app/docs
+      - ./dist:/opt/app/dist
+      - .:/opt/app-source:ro
+      - .:/opt/app-source-modification:rw
+      
+
+
