@@ -35,15 +35,13 @@ console.log("require order of `MyComponent`:",
 
 ```
 
-### Packager.prototype.constructor()
+### `Packager.prototype.constructor()`
 
 * Initializes `this` object in Packager Class. Please use `new` keyword
     to instantiate the class which automatically runs this method before
     instance is returned.
 
-Parameter
-
-    *none*
+Parameter *none*
 
 Returns
 
@@ -51,7 +49,7 @@ Value | Type  | Description
 --    |--     |--
 packager  | Packager | the Packager instance.
 
-### Packager.prototype.exists(names)
+### `Packager.prototype.exists(names)`
 
 * Inspect if package-like `names` or one of the item in
     `names` parameter exists.
@@ -68,7 +66,7 @@ Value   | Type  | Description
 --      |--     |--
 true    | Boolean | True if `names` String or all items in `names` Array exists and registered.
 
-### Packager.prototype.register(name[, dependencies])
+### `Packager.prototype.register(name[, dependencies])`
 
 * Registers a package-like `name` with optional `dependencies` Array.
 
@@ -85,7 +83,7 @@ Value | Type  | Description
 --    |--     |--
 packager | Packager | The Packager instance.
 
-### Packager.prototype.flatten(names)
+### `Packager.prototype.flatten(names)`
 
 * Flattens the dependency tree of the given package `names` or collection of
     package `names` which is sorted by load sequence of package `names` and
