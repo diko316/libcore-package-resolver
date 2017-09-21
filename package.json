@@ -1,6 +1,6 @@
 {
   "name": "libcore-package-resolver",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "Light-weight multi purpose package dependency resolver",
   "main": "dist/libcore-package-resolver.js",
   "module": "dist/libcore-package-resolver.es.js",
